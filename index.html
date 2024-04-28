@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Digital Clock</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-   </head>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>clock</title>
+</head>
 <body>
-    <div class="hero">
-        <div class="container">
-            <div class="clock">
-                <span id="hrs">00</span>
-                <span>:</span>
-                <span id="min">00</span>
-                <span>:</span>
-                <span id="sec">00</span>
-            </div>
-        </div>
-    </div>
-    
-    
+    <section class="hero">
+        <h1 id="time">T I M E</h1><br><br>
+        <h1 data-aos="fade-up" data-aos-duration="1500" id="clock"></h1>
+        <section data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" id="mmddyy"></section>
+        <p class="animate__animated animate__fadeInLeft animate__delay-3s" id="madeby">Made by <a href="https://github.com/itfeelsharsh" target="_blank"> Harsh </a></p>
+        <p class="animate__animated animate__fadeInRight animate__delay-4s"  id="made">Made with Html, Css & Javascript</p>
+    </section>
     <script src="script.js"></script>
-    <script async type="application/javascript" src="https://a.pemsrv.com/ad-provider.js"></script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+        <script async type="application/javascript" src="https://a.pemsrv.com/ad-provider.js"></script> 
  <ins class="eas6a97888e33" data-zoneid="5286718"></ins> 
  <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
     <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
@@ -31,6 +37,5 @@
 <script async type="application/javascript" src="https://a.pemsrv.com/ad-provider.js"></script> 
  <ins class="eas6a97888e35" data-zoneid="5286730"></ins> 
  <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-    
 </body>
 </html>
